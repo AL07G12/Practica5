@@ -12,7 +12,7 @@ $(document).ready(function(e){
 		audio.preloadFX('Sol','audio/G.mp3', function(msg){}, function(msg){alert('error: '+msg);});
 		audio.preloadFX('La','audio/A.mp3', function(msg){}, function(msg){alert('error: '+msg);});
 		audio.preloadFX('Si','audio/B.mp3', function(msg){}, function(msg){alert('error: '+msg);});
-		$('.Nota').bind('touch start',function(e){
+		$('.Nota').bind('touchstart',function(e){
 			$(this).addclass('tocada');
 			audio.play($(this).attr('id'));
 		}).bind('touchend', function(e){
